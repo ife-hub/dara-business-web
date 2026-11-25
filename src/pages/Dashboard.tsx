@@ -3,7 +3,7 @@ import { useDashboard } from '../api/hooks';
 import { useAuth } from '../auth/Auth';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { Avatar, ErrorBox, Loading, Pill } from '../components/ui';
+import { Avatar, ErrorBox, Loading, Pill } from '../components/Widgets';
 import { fmtDur, fmtTime, firstName, greeting, naira, slug } from '../lib/format';
 import { useBookingActions } from '../lib/useBookingActions';
 import { BookingModal } from '../modals/BookingModal';

@@ -3,7 +3,7 @@ import { useCatalog } from '../api/hooks';
 import { useAuth } from '../auth/Auth';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { ErrorBox, Loading } from '../components/ui';
+import { ErrorBox, Loading } from '../components/Widgets';
 import { fmtDur, naira } from '../lib/format';
 import { CatalogModal } from '../modals/CatalogModal';
 

@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useInventory } from '../api/hooks';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { ErrorBox, Loading, Pill } from '../components/ui';
+import { ErrorBox, Loading, Pill } from '../components/Widgets';
 import { AppHandoffModal } from '../modals/AppHandoff';
 
 export function Inventory() {

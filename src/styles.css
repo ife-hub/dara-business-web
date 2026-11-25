@@ -36,6 +36,7 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+#root{height:100%}
 body{height:100%;margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
 button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
@@ -144,12 +145,12 @@ svg.i{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-widt
 .biz b{display:block;font-size:13.5px;font-weight:700}
 .biz small{display:block;font-size:12px;color:var(--muted)}
 .nav{display:flex;flex-direction:column;gap:2px}
-.nav button{display:flex;align-items:center;gap:12px;height:40px;padding:0 12px;border:0;border-radius:10px;background:transparent;color:var(--ink-2);font-weight:600;font-size:14px;text-align:left}
-.nav button:hover{background:var(--hover);color:var(--ink)}
-.nav button.on{background:var(--blue-soft);color:var(--blue)}
+.nav button,.nav a{text-decoration:none;display:flex;align-items:center;gap:12px;height:40px;padding:0 12px;border:0;border-radius:10px;background:transparent;color:var(--ink-2);font-weight:600;font-size:14px;text-align:left}
+.nav button:hover,.nav a:hover{background:var(--hover);color:var(--ink)}
+.nav button.on,.nav a.on{background:var(--blue-soft);color:var(--blue)}
 .nav .badge{margin-left:auto;min-width:22px;height:20px;padding:0 6px;border-radius:999px;background:var(--line-2);color:var(--ink-2);font-size:11.5px;font-weight:700;display:grid;place-items:center}
 .nav .badge.alert{background:var(--over-bg);color:var(--over)}
-.nav button.on .badge{background:var(--surface);color:var(--blue)}
+.nav button.on .badge,.nav a.on .badge{background:var(--surface);color:var(--blue)}
 .sb-app{margin-top:auto;border:1px dashed var(--blue-line);background:var(--blue-soft-2);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
 .sb-app p{font-size:12.5px;color:var(--ink-2);line-height:1.5}
 .sb-app b{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink)}

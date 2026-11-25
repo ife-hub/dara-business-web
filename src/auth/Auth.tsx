@@ -48,9 +48,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const login = useCallback(async ({ id, password, remember, asStaff }: { id: string; password: string; remember: boolean; asStaff: boolean }) => {
     const res = asStaff
-      ? await post<{ access_token: string }>('/staff/login', { email: id, pin: password })
-      : await post<{ access_token: string }>('/login', { phone: id, password });
-    if (!res.access_token) throw new Error('Those details did not match an account. Check them and try again.');
+      ? await post<{ access_token?: string; message?: string }>('/staff/login', { email: id, pin: password })
+      : await post<{ access_token?: string; message?: string }>('/login', { phone: id, password });
+    // Wrong details come back as 200 { status: true, message } with no token.
+    if (!res.access_token) throw new Error(res.message || 'Those details did not match an account. Check them and try again.');
     tokenStore.set(res.access_token, remember);
     await refresh();
   }, [refresh]);

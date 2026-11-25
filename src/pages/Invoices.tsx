@@ -4,7 +4,7 @@ import { useInvoices } from '../api/hooks';
 import type { Invoice } from '../api/types';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { ErrorBox, Loading, Pill } from '../components/ui';
+import { ErrorBox, Loading, Pill } from '../components/Widgets';
 import { fmtDate, naira } from '../lib/format';
 import { InvoiceModal } from '../modals/InvoiceModal';
 import { MarkPaidModal } from '../modals/PaymentModal';

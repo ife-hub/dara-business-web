@@ -7,7 +7,7 @@ import type { Hours, SettingsData, SettingsTab } from '../api/types';
 import { useAuth } from '../auth/Auth';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { ErrorBox, Loading } from '../components/ui';
+import { ErrorBox, Loading } from '../components/Widgets';
 import { StaffModal } from '../modals/StaffModal';
 
 const TABS: [SettingsTab, string][] = [

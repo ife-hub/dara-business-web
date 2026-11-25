@@ -6,7 +6,7 @@ import type { StaffMember } from '../api/types';
 import { useQueryClient } from '@tanstack/react-query';
 import { Icon } from '../components/Icon';
 import { ConfirmModal, useUi } from '../components/Ui';
-import { Avatar, ErrorBox, Loading } from '../components/ui';
+import { Avatar, ErrorBox, Loading } from '../components/Widgets';
 import { firstName } from '../lib/format';
 import { StaffModal } from '../modals/StaffModal';
 

@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useCustomers } from '../api/hooks';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { ErrorBox, Loading, Pill } from '../components/ui';
+import { ErrorBox, Loading, Pill } from '../components/Widgets';
 import { agoText, initials, naira } from '../lib/format';
 import { CustomerModal } from '../modals/CustomerModal';
 

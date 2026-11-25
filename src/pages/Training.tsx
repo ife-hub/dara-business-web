@@ -6,7 +6,7 @@ import type { Course, TrainingData } from '../api/types';
 import { useAuth } from '../auth/Auth';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { Avatar, ErrorBox, Loading } from '../components/ui';
+import { Avatar, ErrorBox, Loading } from '../components/Widgets';
 import { firstName, fmtDur, relDate, today } from '../lib/format';
 import { AssignModal } from '../modals/AssignModal';
 

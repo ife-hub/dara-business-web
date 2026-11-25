@@ -6,7 +6,7 @@ import { STATUSES } from '../api/types';
 import { useAuth } from '../auth/Auth';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { Avatar, Empty, STATUS_VAR } from '../components/ui';
+import { Avatar, Empty, STATUS_VAR } from '../components/Widgets';
 import { addDays, cap, firstName, fmtHour, fmtTime, iso, parseISO, slug, startOfWeek, today, todayDate } from '../lib/format';
 import { BookingModal } from '../modals/BookingModal';
 

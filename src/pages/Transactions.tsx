@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useTransactions } from '../api/hooks';
 import { Icon } from '../components/Icon';
 import { useUi } from '../components/Ui';
-import { ErrorBox, Loading } from '../components/ui';
+import { ErrorBox, Loading } from '../components/Widgets';
 import { METHODS } from '../lib/bookings';
 import { naira, relDate } from '../lib/format';
 import { TransactionModal } from '../modals/TransactionModal';
